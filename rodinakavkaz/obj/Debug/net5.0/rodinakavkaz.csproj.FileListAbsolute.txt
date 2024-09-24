@@ -1,0 +1,16 @@
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\bin\Debug\net5.0\rodinakavkaz.exe
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\bin\Debug\net5.0\rodinakavkaz.deps.json
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\bin\Debug\net5.0\rodinakavkaz.runtimeconfig.json
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\bin\Debug\net5.0\rodinakavkaz.runtimeconfig.dev.json
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\bin\Debug\net5.0\rodinakavkaz.dll
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\bin\Debug\net5.0\ref\rodinakavkaz.dll
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\bin\Debug\net5.0\rodinakavkaz.pdb
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\obj\Debug\net5.0\rodinakavkaz.csproj.AssemblyReference.cache
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\obj\Debug\net5.0\rodinakavkaz.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\obj\Debug\net5.0\rodinakavkaz.AssemblyInfoInputs.cache
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\obj\Debug\net5.0\rodinakavkaz.AssemblyInfo.cs
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\obj\Debug\net5.0\rodinakavkaz.csproj.CoreCompileInputs.cache
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\obj\Debug\net5.0\rodinakavkaz.dll
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\obj\Debug\net5.0\ref\rodinakavkaz.dll
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\obj\Debug\net5.0\rodinakavkaz.pdb
+C:\Users\Dauren\source\repos\rodinakavkaz\rodinakavkaz\obj\Debug\net5.0\rodinakavkaz.genruntimeconfig.cache
