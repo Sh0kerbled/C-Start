@@ -143,7 +143,7 @@ namespace rodinakavkaz
                 Console.Write(array[i] + ", ");
             }*/
 
-            int[] array = { 1, 2, 3, 4, 5 };
+            /*int[] array = { 1, 2, 3, 4, 5 };
 
             for(int i = 0; i < array.Length; i++)
             {
@@ -179,8 +179,15 @@ namespace rodinakavkaz
                 {
                     Console.Write(array1[g] + " ");
                 }
-            }
-            
+            }*/
+
+            int[] array = { 1, 2, 3, 4, 5 };
+
+            int total = array.Sum();
+
+            int result = total / 5;
+
+            Console.WriteLine(result);
         }
     }
 }
