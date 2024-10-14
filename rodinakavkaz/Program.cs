@@ -238,7 +238,7 @@ namespace rodinakavkaz
 
             Console.WriteLine("Ты ввел чётное число: " + output);*/
 
-            int[] RandomNumbers(int size, int min, int max)
+            /*int[] RandomNumbers(int size, int min, int max)
             {
                 int[] array = new int[size];
                 Random rnd = new Random();
@@ -274,7 +274,10 @@ namespace rodinakavkaz
             }
 
             int[] arr = RandomNumbers(4, 100, 1000);
-            NumberChecker(arr);
+            NumberChecker(arr);*/
+
+            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Console.WriteLine("[{0}]", string.Join(", ", array.Reverse()));
         }
     }
 }
