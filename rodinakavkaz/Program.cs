@@ -221,7 +221,7 @@ namespace rodinakavkaz
             int[] arr = CreateArrayRndInt(10, 1, 100);
             PrintArray(arr);*/
 
-            int numRequest(int a)
+            /*int numRequest(int a)
             {
                 do
                 {
@@ -236,7 +236,45 @@ namespace rodinakavkaz
 
             int output = numRequest(a);
 
-            Console.WriteLine("Ты ввел чётное число: " + output);
+            Console.WriteLine("Ты ввел чётное число: " + output);*/
+
+            int[] RandomNumbers(int size, int min, int max)
+            {
+                int[] array = new int[size];
+                Random rnd = new Random();
+                int Count = 0;
+
+                for (int i = 0; i < array.Length; i++)
+                {
+                    array[i] = rnd.Next(min, max);
+                    if(array[i] % 2 == 0)
+                    {
+                        Count++;
+                    }
+                }
+                Console.WriteLine($"Количество чётных чисел: {Count}");
+                return array;
+            }
+
+            void NumberChecker(int[] checker)
+            {
+                Console.Write("[");
+                for(int i = 0; i < checker.Length; i++)
+                {
+                    if(i < checker.Length - 1)
+                    {
+                        Console.Write($"{checker[i]}, ");
+                    }
+                    else
+                    {
+                        Console.Write($"{checker[i]}");
+                    }
+                }
+                Console.Write("]");
+            }
+
+            int[] arr = RandomNumbers(4, 100, 1000);
+            NumberChecker(arr);
         }
     }
 }
