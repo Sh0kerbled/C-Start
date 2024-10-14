@@ -181,13 +181,62 @@ namespace rodinakavkaz
                 }
             }*/
 
-            int[] array = { 1, 2, 3, 4, 5 };
+            /*int[] array = { 1, 2, 3, 4, 5 };
 
             int total = array.Sum();
 
             int result = total / 5;
 
-            Console.WriteLine(result);
+            Console.WriteLine(result);*/
+
+            /*int[] CreateArrayRndInt(int size, int min, int max)
+            {
+                int[] array = new int[size];
+                Random rnd = new Random();
+
+                for(int i = 0; i<size; i++)
+                {
+                    array[i] = rnd.Next(min, max);
+                }
+
+                return array;
+            }
+
+            void PrintArray(int[] array)
+            {
+                Console.Write("[");
+                for(int i = 0; i < array.Length; i++)
+                {
+                    if(i < array.Length - 1)
+                    {
+                        Console.Write($"{array[i]}, ");
+                    }
+                    else
+                    {
+                        Console.Write($"{array[i]}");
+                    }
+                }
+                Console.Write("]");
+            }
+            int[] arr = CreateArrayRndInt(10, 1, 100);
+            PrintArray(arr);*/
+
+            int numRequest(int a)
+            {
+                do
+                {
+                    Console.Write("Введи число: ");
+                    a = Convert.ToInt32(Console.ReadLine());
+                }
+                while (a % 2 != 0);
+                return a;
+            }
+
+            int a = 0;
+
+            int output = numRequest(a);
+
+            Console.WriteLine("Ты ввел чётное число: " + output);
         }
     }
 }
