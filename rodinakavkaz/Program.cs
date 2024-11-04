@@ -5,6 +5,13 @@ namespace rodinakavkaz
 {
     class Program
     {
+        public static void PrintRange(int M, int N)
+        {
+            if (M > N) return;
+            Console.Write(M);
+            if (M < N) Console.Write(", ");
+            PrintRange(M + 1, N);
+        }
         static void Main(string[] args)
         {
             int[,] array = new int [3, 3];
@@ -35,6 +42,11 @@ namespace rodinakavkaz
                 }
                 Console.WriteLine($"Столбец {col + 1}: {max}");
             }
+
+            int M = 1;
+            int N = 5;
+            Console.WriteLine("Числа в промежутке:");
+            PrintRange(M, N);
         }
     }
 }
