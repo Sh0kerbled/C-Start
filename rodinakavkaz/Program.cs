@@ -5,279 +5,48 @@ namespace rodinakavkaz
 {
     class Program
     {
+        public static void PrintRange(int M, int N)
+        {
+            if (M > N) return;
+            Console.Write(M);
+            if (M < N) Console.Write(", ");
+            PrintRange(M + 1, N);
+        }
         static void Main(string[] args)
         {
-            //1 lesson
+            int[,] array = new int [3, 3];
+            Random rnd = new Random();
 
-            /*int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());    
-
-            if(Math.Pow(a,2) == b)
+            for(int i = 0; i < array.GetLength(0); i++)
             {
-                Console.WriteLine("рабетаем дура");
-            }
-            else
-            {
-                Console.WriteLine("не работаем");
-            }
-
-            int c = int.Parse(Console.ReadLine());
-            int d = c - c * 2;
-
-            for (int i = d; i <= c; i++)
-            {
-                Console.WriteLine(i);
-            }*/
-
-            //2 lesson
-
-            /*int a = Convert.ToInt32(Console.ReadLine());
-
-            if(a % 7 == 0 && a % 23 == 0)
-            {
-                Console.WriteLine("Делится");
-            }
-            else
-            {
-                Console.WriteLine("Не делится");
-            }*/
-
-            /*int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-
-            if (x > 0 && y > 0)
-            {
-                Console.WriteLine($"1 четверть: [{x},{y}]");
-            }
-            else if (x > 0 && y < 0)
-            {
-                Console.WriteLine($"4 четверть: [{x},{y}]");
-            }
-            else if (x < 0 && y < 0)
-            {
-                Console.WriteLine($"3 четверть: [{x},{y}]");
-            }
-            else if (x < 0 && y > 0)
-            {
-                Console.WriteLine($"2 четверть: [{x},{y}]");
-            }*/
-
-            /*int num;
-
-            do
-            {
-                Console.Write("Введите число от 10 до 99: ");
-                num = Convert.ToInt32(Console.ReadLine());
-
-                if (num < 10 || num > 99)
+                for(int j = 0; j < array.GetLength(1); j++)
                 {
-                    Console.WriteLine("куда собрался");
+                    array[i, j] = rnd.Next(10, 100);
+                    Console.Write(array[i, j] + " ");
                 }
-
-            } while (num < 10 || num > 99);
-
-            int first = num / 10;
-            int second = num % 10;
-
-            if(first > second)
-            {
-                Console.WriteLine($"{first} больше чем {second}");
+                Console.WriteLine();
             }
-            else
+
+            Console.WriteLine("--------------------------------");
+
+            for(int col = 0; col < array.GetLength(1); col++)
             {
-                Console.WriteLine($"{second} больше чем {first}");
-            }*/
-
-            /*string n = Console.ReadLine();
-
-            for (int i = 0; i < n.Length; i++)
-            {
-                //неа не вывез
-            }*/
-
-
-
-            /*int[] array = { 1, -5, 6, -7, 3, 6 };
-            int num = Convert.ToInt32(Console.ReadLine());
-            bool isFound = false;
-
-
-            for(int i = 0; i < array.Length; i++)
-            {
-                if(array[i] == num)
-                {
-                    isFound = true;
-                    break;
-                }
+                int max = array[0, col];
                 
-            }
-
-            string result = isFound == true ? "работаем дура" : "пошгелн аъуй";
-            Console.WriteLine(result);*/
-
-            /*int[] array = { 1, 2, 3, 4, 5 };
-            int num = Convert.ToInt32(Console.ReadLine());
-            bool isFound = false;
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (array[i] == num)
+                for(int row = 0; row < array.GetLength(0); row++)
                 {
-                    isFound = true;
-                }
-            }
-            string result = isFound == true ? "да" : "нет";
-            Console.WriteLine($"r=esult is {result}");*/
-
-            /*int[] array = { 1, -5, 6, -7, 3 };
-            for(int i = 0; i < array.Length; i++)
-            {
-                array[i] = -array[i];
-                Console.Write(array[i]+ ", ");
-            }*/
-
-            /*int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            for (int i = 1; i < array.Length; i++)
-            {
-                array[i] = array[i] + array[i - i];
-                Console.Write(array[i] + ", ");
-            }*/
-
-            /*int[] array = { 1, 2, 3, 4, 5 };
-
-            for(int i = 0; i < array.Length; i++)
-            {
-                array[i]++;
-                Console.Write(array[i] + ", ");
-            }
-
-            int num = Convert.ToInt32(Console.ReadLine());
-
-            foreach (int number in array)
-            {
-                if(num == number)
-                {
-                    Console.WriteLine("работаем дура");
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("не работаем дура");
-                }
-            }
-
-            for(int k = 0; k < array.Length; k++)
-            {
-                array[k] = -array[k];
-                Console.Write(array[k] + ", ");
-            }
-
-            int[] array1 = { 5, -3, 9, -1, 2, -7, 0 };
-            for(int g = 0; g < array1.Length; g++)
-            {
-                if(array1[g] >= 0)
-                {
-                    Console.Write(array1[g] + " ");
-                }
-            }*/
-
-            /*int[] array = { 1, 2, 3, 4, 5 };
-
-            int total = array.Sum();
-
-            int result = total / 5;
-
-            Console.WriteLine(result);*/
-
-            /*int[] CreateArrayRndInt(int size, int min, int max)
-            {
-                int[] array = new int[size];
-                Random rnd = new Random();
-
-                for(int i = 0; i<size; i++)
-                {
-                    array[i] = rnd.Next(min, max);
-                }
-
-                return array;
-            }
-
-            void PrintArray(int[] array)
-            {
-                Console.Write("[");
-                for(int i = 0; i < array.Length; i++)
-                {
-                    if(i < array.Length - 1)
+                    if (array[row, col] > max)
                     {
-                        Console.Write($"{array[i]}, ");
-                    }
-                    else
-                    {
-                        Console.Write($"{array[i]}");
+                        max = array[row, col];
                     }
                 }
-                Console.Write("]");
-            }
-            int[] arr = CreateArrayRndInt(10, 1, 100);
-            PrintArray(arr);*/
-
-            /*int numRequest(int a)
-            {
-                do
-                {
-                    Console.Write("Введи число: ");
-                    a = Convert.ToInt32(Console.ReadLine());
-                }
-                while (a % 2 != 0);
-                return a;
+                Console.WriteLine($"Столбец {col + 1}: {max}");
             }
 
-            int a = 0;
-
-            int output = numRequest(a);
-
-            Console.WriteLine("Ты ввел чётное число: " + output);*/
-
-            /*int[] RandomNumbers(int size, int min, int max)
-            {
-                int[] array = new int[size];
-                Random rnd = new Random();
-                int Count = 0;
-
-                for (int i = 0; i < array.Length; i++)
-                {
-                    array[i] = rnd.Next(min, max);
-                    if(array[i] % 2 == 0)
-                    {
-                        Count++;
-                    }
-                }
-                Console.WriteLine($"Количество чётных чисел: {Count}");
-                return array;
-            }
-
-            void NumberChecker(int[] checker)
-            {
-                Console.Write("[");
-                for(int i = 0; i < checker.Length; i++)
-                {
-                    if(i < checker.Length - 1)
-                    {
-                        Console.Write($"{checker[i]}, ");
-                    }
-                    else
-                    {
-                        Console.Write($"{checker[i]}");
-                    }
-                }
-                Console.Write("]");
-            }
-
-            int[] arr = RandomNumbers(4, 100, 1000);
-            NumberChecker(arr);*/
-
-            int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            Console.WriteLine("[{0}]", string.Join(", ", array.Reverse()));
+            int M = 1;
+            int N = 5;
+            Console.WriteLine("Числа в промежутке:");
+            PrintRange(M, N);
         }
     }
 }
